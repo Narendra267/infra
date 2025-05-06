@@ -1,10 +1,11 @@
 provider "aws" {
-region = "us-east-1"
+  region = "us-east-1"
 }
+
 resource "aws_instance" "one" {
-  ami-085386e29e44dacd7
+  ami           = "ami-0f88e80871fd81e91"
   instance_type = "t2.micro"
   tags = {
-    Name = "narendra-server"
+    Name = "raham-server"
   }
 }
